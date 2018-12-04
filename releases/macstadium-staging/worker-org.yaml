@@ -21,4 +21,7 @@ spec:
         name: worker-redis-master
 
     jupiterBrainName: jupiter-brain-org
-    secretEnv: staging-common
+    trvs:
+      enabled: true
+      app: macstadium-workers
+      env: staging-common

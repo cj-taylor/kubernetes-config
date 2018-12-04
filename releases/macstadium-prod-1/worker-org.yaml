@@ -23,4 +23,7 @@ spec:
         name: worker-redis-master
 
     jupiterBrainName: jupiter-brain-org
-    secretEnv: production-common
+    trvs:
+      enabled: true
+      app: macstadium-workers
+      env: production-common
