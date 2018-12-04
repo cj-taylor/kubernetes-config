@@ -15,13 +15,7 @@ spec:
     # replicaCount: 5
     replicaCount: 1
     site: com
-
-    concurrency:
-      poolSize: 21
-      totalJobs: 21 # eventually 105ish
-      redis:
-        name: worker-redis-master
-
+    poolSize: 21
     jupiterBrainName: jupiter-brain-com
     trvs:
       enabled: true

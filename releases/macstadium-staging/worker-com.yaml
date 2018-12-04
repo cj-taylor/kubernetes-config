@@ -10,16 +10,10 @@ spec:
   releaseName: worker-com
   values:
     image:
-      tag: v5.1.0-7-g620b1f9
+      tag: v5.0.0
     replicaCount: 4
     site: com
-
-    concurrency:
-      poolSize: 2
-      totalJobs: 4 # this is artificially low for testing
-      redis:
-        name: worker-redis-master
-
+    poolSize: 2
     jupiterBrainName: jupiter-brain-com
     trvs:
       enabled: true
