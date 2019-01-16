@@ -1,15 +1,15 @@
 apiVersion: flux.weave.works/v1beta1
 kind: HelmRelease
 metadata:
-  name: vsphere-monitor
-  namespace: macstadium-staging
+  name: vsphere-janitor-custom-2
+  namespace: macstadium-prod-1
 spec:
   chart:
-    path: charts/vsphere-monitor
+    path: charts/vsphere-janitor
     git: git@github.com:travis-ci/kubernetes-config.git
-    ref: staging
-  releaseName: vsphere-monitor
+  releaseName: vsphere-janitor-custom-2
   values:
     trvs:
       enabled: true
-      env: staging-1
+      env: custom-2-1
+      pro: false
